@@ -1,0 +1,53 @@
+<header>
+<!-- Just an image -->
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="/posts/form">
+      <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+    </a>
+
+    
+        <a class="nav-link" href="/posts/form">Clucks!</a>
+    
+
+    <% if (username) { %>
+        
+            <span>Hello, <%- username %>!</span>
+            <form action="/sign_out" method="POST">
+                <button type="submit" class='btn btn-outline-dark'>Sign Out</button>
+            </form>
+         
+    <% } else { %>
+    
+            <form action="/sign_in" method="POST">
+                <button type="submit" class='btn btn-outline-dark'>Sign in</button>
+            </form>
+       
+    <% } %>
+       
+  
+  </nav>
+  
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="public/images/logo-file-40-.jpeg" width="30" height="30" alt="">
+          </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                
+                
+                <li class="nav-item active">
+                    <a class="nav-link" href="/posts/new">Clucks!</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav> -->
+
+</header>
+<br>
+<hr/>
